@@ -1,0 +1,11 @@
+@include font-face('CeraPro', "../../public/fonts/PlayfairDisplay-Regular", var(--regular), normal);
+@include font-face('Playfair', "../../public/fonts/CeraPro-Regular", var(--regular), normal);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-cera);
+  font-size: 15px;
+}
