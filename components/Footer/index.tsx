@@ -4,9 +4,7 @@ import { css } from "astroturf";
 
 interface Props {}
 
-const Footer = React.memo(({}: Props) => {
-  return <div>Footer</div>;
-});
+const Footer = React.memo(({}: Props) => <div>Footer</div>);
 
 const styles = css`
   .link {
