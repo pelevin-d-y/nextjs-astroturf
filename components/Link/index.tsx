@@ -1,24 +1,29 @@
 import React from 'react'
 import NextLink from 'next/link'
 import classNames from 'classnames'
-import {css} from 'astroturf'
+import { css } from 'astroturf'
 
-interface Props extends React.HTMLAttributes<HTMLDivElement>{
-  href: string,
-  children: React.ReactNode,
-  typeSize: 'medium' | 'large',
-  typeColor: 'light' | 'dark',
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  href: string
+  children: React.ReactNode
+  typeSize: 'medium' | 'large'
+  typeColor: 'light' | 'dark'
 }
 
-const Link = ({href, children, typeSize, typeColor, className }: Props) => {
-  return (
-    <NextLink href={href}>
-      <a className={classNames(styles.link, styles[typeSize], styles[typeColor], className)}>
-        {children}
-      </a>
-    </NextLink>
-  )
-}
+const Link = ({ href, children, typeSize, typeColor, className }: Props) => (
+  <NextLink href={href}>
+    <a
+      className={classNames(
+        styles.link,
+        styles[typeSize],
+        styles[typeColor],
+        className
+      )}
+    >
+      {children}
+    </a>
+  </NextLink>
+)
 
 const styles = css`
   .link {
@@ -46,10 +51,5 @@ const styles = css`
     background: var(--black);
   }
 `
-
-Link.defaultProps = {
-  typeSize: 'large',
-  typeColor: 'dark',
-}
 
 export default Link

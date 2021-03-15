@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { css } from 'astroturf'
-import SearchIcon from 'public/svg/search.svg'
+import SearchIcon from 'public/svg/menu.svg'
 
 import classNames from 'classnames'
 import useOnClickOutside from 'helpers/hooks/use-outside-click'
