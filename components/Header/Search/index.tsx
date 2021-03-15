@@ -1,21 +1,21 @@
-import React, { useState, useRef } from "react";
-import { css } from "astroturf";
-import SearchIcon from "public/svg/search.svg";
+import React, { useState, useRef } from 'react'
+import { css } from 'astroturf'
+import SearchIcon from 'public/svg/menu.svg'
 
-import classNames from "classnames";
-import useOnClickOutside from "helpers/hooks/use-outside-click";
+import classNames from 'classnames'
+import useOnClickOutside from 'helpers/hooks/use-outside-click'
 
 interface Props {
-  className?: string;
+  className?: string
 }
 
 const Search: React.FC<Props> = ({ className }) => {
-  const [isActive, setIsActive] = useState(false);
-  const ref = useRef(null);
+  const [isActive, setIsActive] = useState(false)
+  const ref = useRef(null)
   const handleClickOutside = () => {
-    setIsActive(false);
-  };
-  useOnClickOutside(ref, handleClickOutside);
+    setIsActive(false)
+  }
+  useOnClickOutside(ref, handleClickOutside)
 
   return (
     <div className={classNames(styles.wrapper, className)}>
@@ -26,7 +26,7 @@ const Search: React.FC<Props> = ({ className }) => {
           <SearchIcon
             alt="Logo"
             onClick={() => {
-              setIsActive(true);
+              setIsActive(true)
             }}
           />
         </div>
@@ -38,8 +38,8 @@ const Search: React.FC<Props> = ({ className }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
 const styles = css`
   .wrapper {
@@ -79,6 +79,6 @@ const styles = css`
     width: 152px;
     padding: 5px 8px 5px 8px;
   }
-`;
+`
 
-export default Search;
+export default Search

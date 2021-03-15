@@ -1,13 +1,13 @@
-import React from "react";
-import NextLink from "next/link";
-import classNames from "classnames";
-import { css } from "astroturf";
+import React from 'react'
+import NextLink from 'next/link'
+import classNames from 'classnames'
+import { css } from 'astroturf'
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  href: string;
-  children: React.ReactNode;
-  typeSize: "medium" | "large";
-  typeColor: "light" | "dark";
+  href: string
+  children: React.ReactNode
+  typeSize: 'medium' | 'large'
+  typeColor: 'light' | 'dark'
 }
 
 const Link = ({ href, children, typeSize, typeColor, className }: Props) => (
@@ -23,7 +23,7 @@ const Link = ({ href, children, typeSize, typeColor, className }: Props) => (
       {children}
     </a>
   </NextLink>
-);
+)
 
 const styles = css`
   .link {
@@ -50,11 +50,6 @@ const styles = css`
     color: var(--white);
     background: var(--black);
   }
-`;
+`
 
-Link.defaultProps = {
-  typeSize: "large",
-  typeColor: "dark",
-};
-
-export default Link;
+export default Link

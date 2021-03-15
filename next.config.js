@@ -5,19 +5,19 @@ module.exports = {
       test: /\.(js|mjs|jsx|ts|tsx)$/,
       use: [
         {
-          loader: "astroturf/loader",
+          loader: 'astroturf/loader',
           options: {
-            extension: ".module.css",
+            extension: '.module.css',
           },
         },
       ],
-    });
+    })
 
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
+      use: ['@svgr/webpack'],
+    })
 
-    return config;
+    return config
   },
-};
+}

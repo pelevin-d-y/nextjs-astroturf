@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import React from 'react'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 const HomeLayout: React.FC = ({ children }) => (
   <>
@@ -8,6 +8,6 @@ const HomeLayout: React.FC = ({ children }) => (
     {children}
     <Footer />
   </>
-);
+)
 
-export default HomeLayout;
+export default HomeLayout

@@ -1,28 +1,30 @@
-import React from "react";
-import { css } from "astroturf";
-import Image from "next/image";
-import classNames from "classnames";
-import NextLink from "next/link";
+import React from 'react'
+import { css } from 'astroturf'
+import Image from 'next/image'
+import classNames from 'classnames'
+import NextLink from 'next/link'
+import Search from './Search'
 
-interface Props {}
-
-const Header = ({}: Props) => (
+const Header = (): JSX.Element => (
   <header className={classNames(styles.header)}>
-    <div className={classNames("container", styles.container)}>
+    <div className={classNames('container', styles.container)}>
       <div className={styles.menu}>Menu</div>
       <div className={styles.logo}>
         <NextLink href="/">
           <a>
-            {/* <Image
-                src={}
-                alt="Logo"
-                width={264}
-                height={66}
-              /> */}
+            <Image
+              src="/images/main-section.jpg"
+              alt="Logo"
+              width={264}
+              height={66}
+            />
           </a>
         </NextLink>
       </div>
       <div className={styles.profile}>
+        <div>
+          <Search />
+        </div>
         <div className={styles.link}>
           <NextLink href="/sign-up">
             <a className={styles.profileLink}>Sign up</a>
@@ -31,7 +33,7 @@ const Header = ({}: Props) => (
       </div>
     </div>
   </header>
-);
+)
 
 const styles = css`
   .header {
@@ -76,6 +78,6 @@ const styles = css`
     color: inherit;
     text-decoration: none;
   }
-`;
+`
 
-export default Header;
+export default Header
