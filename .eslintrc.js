@@ -31,7 +31,6 @@ module.exports = {
     'react/display-name': 'off',
     "react/react-in-jsx-scope": "off",
     'jsx-a11y/anchor-is-valid': 'off',
-    'react/jsx-props-no-spreading': ['error', { custom: 'ignore' }],
     'prettier/prettier': [
       'error',
       { singleQuote: true, jsxSingleQuote: false, semi: false },
