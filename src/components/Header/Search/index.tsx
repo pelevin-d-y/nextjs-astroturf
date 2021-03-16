@@ -3,7 +3,7 @@ import { css } from 'astroturf'
 import SearchIcon from 'public/svg/menu.svg'
 
 import classNames from 'classnames'
-import useOnClickOutside from 'helpers/hooks/use-outside-click'
+import useOnClickOutside from 'src/helpers/hooks/use-outside-click'
 
 interface Props {
   className?: string
@@ -24,7 +24,6 @@ const Search: React.FC<Props> = ({ className }) => {
       >
         <div className={styles.image}>
           <SearchIcon
-            alt="Logo"
             onClick={() => {
               setIsActive(true)
             }}

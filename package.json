@@ -15,7 +15,7 @@
     "classnames": "^2.2.6",
     "next": "10.0.7",
     "normalize.css": "^8.0.1",
-    "react": "17.0.1",
+    "react": "^17.0.1",
     "react-dom": "17.0.1",
     "react-query": "^3.12.1",
     "sass": "^1.32.8"
