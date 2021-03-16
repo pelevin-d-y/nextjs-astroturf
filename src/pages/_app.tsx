@@ -1,5 +1,5 @@
 import 'normalize.css'
-import 'styles/global.scss'
+import 'src/styles/global.scss'
 import React from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { Hydrate } from 'react-query/hydration'

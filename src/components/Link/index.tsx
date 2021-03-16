@@ -10,7 +10,13 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   typeColor: 'light' | 'dark'
 }
 
-const Link = ({ href, children, typeSize, typeColor, className }: Props) => (
+const Link = ({
+  href,
+  children,
+  typeSize,
+  typeColor,
+  className,
+}: Props): JSX.Element => (
   <NextLink href={href}>
     <a
       className={classNames(
